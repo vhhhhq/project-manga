@@ -1,0 +1,24 @@
+.card-sector {
+    display: flex;
+    gap: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+.block-section {
+    overflow-x: scroll;
+    padding: 24px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    border-radius: 8px;
+    gap: 12px;
+}
+.block-section::-webkit-scrollbar {
+    width: 0;
+}
+.card-sector .block-section {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
